@@ -8,7 +8,7 @@ main,.top,footer{max-width:760px;margin:0 auto;padding:0 1.25rem}
 .brand{font:700 1.05rem var(--mono);color:var(--text);text-decoration:none;overflow-wrap:anywhere}
 .prompt{color:var(--accent)}
 nav{display:flex;flex-wrap:wrap;gap:.5rem 1rem}
-nav a{font:.92rem var(--mono);color:var(--muted);text-decoration:none;padding-bottom:2px}
+nav a{display:inline-flex;align-items:center;min-height:44px;font:.92rem var(--mono);color:var(--muted);text-decoration:none;padding:2px 0}
 nav a:hover{color:var(--text);border-bottom:2px solid var(--accent)}
 a{color:var(--accent);text-underline-offset:3px}
 h1,h2,h3{line-height:1.25}
@@ -49,4 +49,4 @@ pre code{display:block;white-space:pre;tab-size:4}
 .video{position:relative;padding-bottom:56.25%;height:0;margin:1rem 0}
 .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:10px}
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:3rem;padding-top:1.2rem;padding-bottom:2rem}
-@media(max-width:560px){.top{align-items:flex-start;flex-direction:column}.post{grid-template-columns:1fr;gap:0}.hero{flex-direction:row;align-items:flex-start;gap:1rem}.hero>div{min-width:0}.hero h1{font-size:clamp(1.5rem,7vw,2.4rem)}footer{flex-direction:column}.contact li{display:flex;align-items:flex-start;gap:.5rem}.contact strong{width:auto;flex:0 0 5.5rem}.contact a{min-width:0;overflow-wrap:anywhere}}
+@media(max-width:560px){main,.top,footer{padding-left:1rem;padding-right:1rem}.top{align-items:flex-start;flex-direction:column;gap:.25rem;padding-top:1rem;padding-bottom:1rem}body{font-size:18px}.post{grid-template-columns:1fr;gap:0}.hero{flex-direction:row;align-items:center;gap:.875rem}.hero>div{min-width:0}.hero h1{font-size:clamp(1.45rem,7vw,2rem);overflow-wrap:anywhere}.hero .lead{font-size:.95rem}h2{margin-top:1.8rem}.chips{gap:.4rem}.chips li{padding:.35rem .7rem}footer{flex-direction:column}.contact li{display:flex;align-items:flex-start;gap:.5rem}.contact strong{width:auto;flex:0 0 5.5rem}.contact a{min-width:0;overflow-wrap:anywhere}}
